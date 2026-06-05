@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:16
 
 # Copiamos scripts de inicialización (se ejecutan automáticamente al crear el volumen de datos por primera vez)
 COPY init.sql /docker-entrypoint-initdb.d/01_init.sql
